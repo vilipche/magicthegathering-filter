@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <script  src="./js/home.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="./style/home.css">
+        <title>Magic The Gathering Cards</title>
+    </head>
+    
+    <body>
+        <div class="centered">
+            <h1>Magic The Gathering Cards</h1>
+
+            <form action='./cards/cards.html' onsubmit="return validateForm()" method="POST" >
+                <input id="nameField" name="name" placeholder="Name"/>
+                <button id="submitButton" type="submit" value="submit" >Submit</button>
+            </form>
+            <p id="errorField" style="padding-left: 20px; color: black"></p>
+        </div>
+    </body>
+</html> 

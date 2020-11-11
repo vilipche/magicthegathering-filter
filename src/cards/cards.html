@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <script src="./js/cards.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./style/cards.css">
+        <link rel="stylesheet" type="text/css" href="./style/spinner.css">
+
+        <title>Magic The Gathering Cards</title>
+    </head>
+    <body>
+
+        <header >
+            <div id="hello"></div>
+
+            <div id="filter">
+                <input type="text" id="nameSearch" onkeyup="updateSearch(this)" placeholder="Search name of card">
+                <select id="selectTypes" onclick="updateTypesAndColors()" ></select>
+                <select id="selectColors" onclick="updateTypesAndColors()" ></select>
+                <select id="selectOrders" data-order="ascending" onclick="updateOrders(this)" ></select>
+                <button onclick="resetFilters()" >Reset</button>
+            </div>
+        </header>
+
+        <div id="cardContainer">
+            <div class="loader" >Loading...</div>
+        </div>
+
+
+    </body>
+</html> 

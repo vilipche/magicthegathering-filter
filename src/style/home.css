@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(58, 31, 0);
+}
+h1 {
+    text-align: center;
+}
+.centered {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: #a87b00;
+    padding: 20px;
+    color: white;
+
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding:20px
+}
+
+@media only screen and (max-width: 650px) {
+    form {
+        display: block;
+        justify-content: center;
+    }
+  }
